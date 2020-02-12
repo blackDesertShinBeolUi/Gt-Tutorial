@@ -24,6 +24,14 @@ public class UserController{
 		return "user/update";
 	}
 
+	//회원수정 페이지로 이동
+	@RequestMappin("/user/delete.do)
+	public String delete(){
+		logger.info("경로 : delete");
+
+		return "user/delete";
+	}
+
 }
 
 	
