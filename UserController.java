@@ -1,5 +1,5 @@
 @Controller
-pbulci class UserController{
+public class UserController{
 
 	//로그인 페이지로 이동
 	@RequestMapping("/user/login.do")
@@ -7,4 +7,18 @@ pbulci class UserController{
 		logger.info("경로:login");
 		return "user/login";
 	}
+
+	//회원가입 페이지로 이동
+	@RequestMappin("/user/insert.do)
+	public String insert(){
+		logger.info("경로 : insert");
+
+		return "user/insert";
+	}
+
 }
+
+	
+
+
+
